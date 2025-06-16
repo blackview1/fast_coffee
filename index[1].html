@@ -365,5 +365,22 @@
     <footer>
         <p>© 2025 Fast-Coffee. Todos os direitos reservados.</p>
     </footer>
+    <section class="enigma" id="enigma" style="padding: 30px; text-align: center; background-color: #fff;">
+    <h2>🔍 Enigma do Próximo Ponto 🔍</h2>
+    <p id="texto-enigma" style="font-style: italic; margin-top: 10px;"></p>
+</section>
+
+<script>
+    const enigmas = [
+        "Milhares passam por mim todos os dias... Uns chegam, outros vão... Mas só os atentos vão encontrar o próximo café... Onde o embarque é certo, e a pressa nunca falta... Qual é o lugar?",
+        "Aqui o sino toca, mas é o aroma do café que acorda a galera... Onde será o próximo ponto?",
+        "Em meio às árvores e bancos, um novo aroma vai invadir o ar... Onde a Fast Coffee vai estacionar dessa vez?",
+        "Onde o comércio nunca dorme, e as sacolas andam pra lá e pra cá... Que lugar será esse?",
+        "Se você acha que é só um ponto de encontro... espere até sentir o cheiro do nosso café... Onde estamos indo?"
+    ];
+
+    const indiceAleatorio = Math.floor(Math.random() * enigmas.length);
+    document.getElementById('texto-enigma').innerText = enigmas[indiceAleatorio];
+</script>
 </body>
 </html>
